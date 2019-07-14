@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validate class name</title>
+</head>
+<body>
+<script>
+    function validateClassName(str) {
+        let reExPa = /^[ACP]+[0-9]{4}[GHIKLM]+$/;
+        return reExPa.test(str);
+    }
+
+    let str1 = "C0318G";
+    let str2 = "M0318G";
+
+    console.log(validateClassName(str1));
+    console.log(validateClassName(str2));
+
+</script>
+</body>
+</html>
